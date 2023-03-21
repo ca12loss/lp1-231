@@ -1,3 +1,4 @@
+
 package semana04;
 import java.util.Scanner;
 
@@ -37,5 +38,4 @@ public class Exercicio3 {
 		    
 	}
 }
-
 
