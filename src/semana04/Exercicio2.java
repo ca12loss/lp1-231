@@ -11,9 +11,9 @@ public class Exercicio2 {
         System.out.println("Entre com o terceiro número:");
     double n3= sc.nextDouble();
     
-    double media = (n1+n2+n3)/3;
+    double nmedia = (n1+n2+n3)/3;
     
-    System.out.println("A média é: "+media);
+    System.out.println("A média é: "+nmedia);
     
     sc.close();
 }
