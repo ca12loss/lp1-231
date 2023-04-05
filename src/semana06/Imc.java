@@ -35,19 +35,19 @@ public class Imc {
             } else if (imc>= 25.0 && imc<29.9){
         
                 System.out.println("Excesso de peso");
-                double pesoideal = Imcmetodos.perderPeso(altura,peso);
+                double pesoideal = Imcmetodos.perderPeso(peso,altura);
                 System.out.println("Precisa perder: "+ deci.format(pesoideal)+" Kg");
         
             } else if (imc >= 30.0 && imc<34.9){
         
                 System.out.println("Obesidade de Classe 1");
-                double pesoideal = Imcmetodos.perderPeso(altura,peso);
+                double pesoideal = Imcmetodos.perderPeso(peso,altura);
                 System.out.println("Precisa perder: "+ deci.format(pesoideal)+" Kg");
         
             } else if (imc>= 35.0 && imc<39.9){
         
                 System.out.println("Obesidade Classe 2");
-                double pesoideal = Imcmetodos.perderPeso(altura,peso);
+                double pesoideal = Imcmetodos.perderPeso(peso,altura);
                 System.out.println("Precisa perder: "+ deci.format(pesoideal)+" Kg");
         
             } else {
