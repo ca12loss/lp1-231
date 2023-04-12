@@ -15,14 +15,14 @@ public class Imc {
             double altura = sc.nextDouble();
         
             double imc = Imcmetodos.calcularImc(peso,altura);
-            
-            double imcganho = 18.5;
-            double imcperda = 24.9;
         
             System.out.println("O seu IMC é: "+deci.format(imc));
 
             String classificar = Imcmetodos.classificarImc(imc);
             System.out.println(classificar);
+
+            double imcganho = 18.5;
+            double imcperda = 24.9;
        
             if (imc<imcganho){
                 double ganharpeso = Imcmetodos.ganharPeso(peso, altura);
