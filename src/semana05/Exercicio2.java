@@ -34,7 +34,7 @@ public class Exercicio2 {
 
     } else if (imc>= 25.0 && imc<29.9){
 
-        System.out.println("Excesso de peso");
+        System.out.println("Sobrepeso");
         double pesoideal = peso-((altura*altura)*imcperda);
         System.out.println("Precisa perder: "+ deci.format(pesoideal)+" Kg");
 
@@ -55,9 +55,8 @@ public class Exercicio2 {
         System.out.println("Obesidade de Classe 3");
         double pesoideal = peso-((altura*altura)*imcperda);
         System.out.println("Precisa perder: "+ deci.format(pesoideal)+" Kg");
-
+    }
         sc.close();
-    } 
 
     }
 }

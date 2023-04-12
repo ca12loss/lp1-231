@@ -20,45 +20,20 @@ public class Imc {
             double imcperda = 24.9;
         
             System.out.println("O seu IMC é: "+deci.format(imc));
-        
-            if (imc<18.5){
-        
-                System.out.println("Peso Baixo");
-                double pesoideal = Imcmetodos.ganharPeso(peso,altura);
-                System.out.println("Precisa ganhar : "+ deci.format(pesoideal)+" Kg");
-        
-            } else if (imc >= 18.5 && imc<24.9){
-        
-                System.out.println("Peso normal");
-                System.out.println("Voce está no peso ideal.");
-        
-            } else if (imc>= 25.0 && imc<29.9){
-        
-                System.out.println("Excesso de peso");
-                double pesoideal = Imcmetodos.perderPeso(peso,altura);
-                System.out.println("Precisa perder: "+ deci.format(pesoideal)+" Kg");
-        
-            } else if (imc >= 30.0 && imc<34.9){
-        
-                System.out.println("Obesidade de Classe 1");
-                double pesoideal = Imcmetodos.perderPeso(peso,altura);
-                System.out.println("Precisa perder: "+ deci.format(pesoideal)+" Kg");
-        
-            } else if (imc>= 35.0 && imc<39.9){
-        
-                System.out.println("Obesidade Classe 2");
-                double pesoideal = Imcmetodos.perderPeso(peso,altura);
-                System.out.println("Precisa perder: "+ deci.format(pesoideal)+" Kg");
-        
+
+            String classificar = Imcmetodos.classificarImc(imc);
+            System.out.println(classificar);
+       
+            if (imc<imcganho){
+                double ganharpeso = Imcmetodos.ganharPeso(peso, altura);
+                System.out.println("Precisa ganhar: "+ deci.format(ganharpeso)+" Kg");
+            } else if (imc>imcperda){
+                double perderpeso = Imcmetodos.perderPeso(peso, altura);
+                System.out.println("Precisa perder: "+deci.format(perderpeso)+" Kg");
             } else {
-        
-                System.out.println("Obesidade de Classe 3");
-                double pesoideal = Imcmetodos.perderPeso(altura,peso);
-                System.out.println("Precisa perder: "+ deci.format(pesoideal)+" Kg");
-        
-                sc.close();
-            } 
-        
+                System.out.println("Não precisa nem perder e nem ganhar, está no peso ideal");
             }
+             sc.close();
+        }
         }
 
