@@ -20,11 +20,18 @@ public class Programa {
         ret2.base = 30.0;
         ret2.altura = 100.0;
 
-        System.out.println(ret1.calcularArea());
-        System.out.println(ret1.calcularPerimetro());
+        System.out.println("------------------------------------");
+        System.out.println("Retangulo 1:");
+        System.out.println("Area: "+ret1.calcularArea());
+        System.out.println("Perimetro: "+ret1.calcularPerimetro());
+        System.out.println("------------------------------------");
+        
+        System.out.println("------------------------------------");
+        System.out.println("Retangulo 2:");
+        System.out.println("Area: "+ret2.calcularArea());
+        System.out.println("Perimetro: "+ret2.calcularPerimetro());
+        System.out.println("------------------------------------");
 
-        System.out.println(ret2.calcularArea());
-        System.out.println(ret2.calcularPerimetro());
 
         Quadrado squr1 = new Quadrado();
         squr1.lado = 4.0;

@@ -9,4 +9,4 @@ Repositório destinado ao conteúdo de LP1.
 - Semana 2
     - Introdução ao Git e GitHub
 - Semana 3 
-    - Criação de projetos Java
+    - Criação de projetos Jav
