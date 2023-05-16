@@ -29,7 +29,7 @@ public class AquarioTest {
     public void FiltrarMin(){
         double volume =160.0;
 
-       double filtrarmin = volume*2;
+       double filtrarmin = Aquariometodos.filtrarMin(volume);
 
        assertEquals(320.0,filtrarmin);
     }
@@ -38,7 +38,7 @@ public class AquarioTest {
     public void FiltrarMax(){
         double volume = 160.0;
 
-        double filtrarmax=volume*3;
+        double filtrarmax= Aquariometodos.filtrarMax(volume);
 
         assertEquals(480.0,filtrarmax);
     }

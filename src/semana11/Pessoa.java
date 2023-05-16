@@ -26,8 +26,16 @@ public class Pessoa {
 
         } else {
             return "Obesidade de Classe 3";
-        }
+        } 
     }
 
-
+    public String getSituacao (double imc){
+        if (imc<18.5){
+          return "GANHAR";
+        } else if (imc>=18.5&&imc<24.9){
+            return "NORMAL";
+        } else{
+            return "PERDER";
+        }
+    }
 }

@@ -25,5 +25,15 @@ public class PessoaTeste {
 
         assertEquals("Peso normal",classificacao);
     }
+@Test 
+     public void testgetSituacao (){
+        Pessoa pessoa = new Pessoa();
+
+        double imc = 28.5;
+
+        String situacao = pessoa.getSituacao(imc);
+
+        assertEquals("PERDER",situacao);
+     }
     
 }
