@@ -1,4 +1,4 @@
-package semana11;
+package semana11.Exercicios;
 
 public class Pessoa {
     public double altura;

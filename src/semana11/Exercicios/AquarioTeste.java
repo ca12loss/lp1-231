@@ -1,4 +1,4 @@
-package semana11;
+package semana11.Exercicios;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -21,19 +21,27 @@ public void testCalcularVolume(){
 @Test
  public void testcalcularPotenciaDoTermostato(){
     Aquario aquario = new Aquario();
-    double volume = 160.0;
-    double temperaturaAmbiente = 24.0;
-    double temperaturaDesejada = 18.0;
+    aquario.comprimento = 100.0;
+    aquario.largura=50.0;
+    aquario.altura=50.0;
 
-    double potencia = aquario.calcularPotenciaDoTermostato(volume,temperaturaAmbiente,temperaturaDesejada);
+    double volume = aquario.calcularVolume();
+    double temperaturaAmbiente = 18.0;
+    double temperaturaDesejada = 24.0;
 
-    assertEquals(48.0,potencia);
+    double potencia = aquario.calcularPotenciaDoTermostato(volume,temperaturaDesejada,temperaturaAmbiente);
+
+    assertEquals(75.0,potencia);
  }
 
  @Test
  public void testcalcularQuantidadeLitrosFiltro(){
     Aquario aquario = new Aquario();
-    double volume = 250.0;
+    aquario.comprimento = 100.0;
+    aquario.largura=50.0;
+    aquario.altura=50.0;
+
+    double volume = aquario.calcularVolume();
 
     double qlitros = aquario.calcularQuantidadeLitrosFiltro(volume);
 
