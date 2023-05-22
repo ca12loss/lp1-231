@@ -24,8 +24,9 @@ public void testCalcularVolume(){
 
     double potencia = aquario.calcularPotenciaDoTermostato(volume,temperaturaAmbiente,temperaturaDesejada);
 
-    assertEquals(48.0,potencia);
+    assertEquals(75.0,potencia);
  }
+ 
 
  @Test
  public void testcalcularQuantidadeLitrosFiltro(){
@@ -34,7 +35,7 @@ public void testCalcularVolume(){
 
     double qlitros = aquario.calcularQuantidadeLitrosFiltro(volume);
 
-    assertEquals(750.0,qlitros);
+    assertEquals(3000.0,qlitros);
  }
 
  
