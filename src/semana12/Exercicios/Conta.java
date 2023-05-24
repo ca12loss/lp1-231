@@ -12,18 +12,34 @@ public class Conta {
     }
 
     public double Sacar(double valor){
-        if (valor<=saldo){
-         return saldo-valor;
-        } else{
+        if (valor>0.0&&valor<saldo){
+            saldo-=valor;
             return saldo;
+        } else{
+            return 0.0;
+        }
+    }
+
+    public double Depositar(double valor){
+        if (valor>0.0){
+            saldo+=valor;
+            return saldo;
+        } else {
+            return 0.0;
         }
         }
     
-
-    public double Depositar(double valor){
-        return saldo+valor;
+    public double Transferir (double valor,int remetente){
+        if (valor>0.0&&valor<saldo){
+            saldo-=valor;
+            remetente+=valor;
+            return saldo;
+        } else{
+            return 0.0;
+        }
+    }
     }
 
     
     
-}
+
