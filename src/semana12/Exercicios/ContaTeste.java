@@ -21,9 +21,12 @@ public class ContaTeste {
     }
     @Test
     public void testTransferir(){
-       Conta conta = new Conta (39485,58992.67,"Aurélio");
-       double status = conta.Transferir(4567.89,59403);
+       Conta c1 = new Conta (39485,589.0,"Aurélio");
+       Conta destino = new Conta (98594,678.0,"Annie");
+       
+       c1.Transferir(200.0,destino);
 
-       assertEquals(54424.78,status);
+       assertEquals(389.0,c1.saldo);
+       assertEquals(878.0,destino.saldo);
     }
 }

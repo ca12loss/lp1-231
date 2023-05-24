@@ -16,7 +16,7 @@ public class Conta {
             saldo-=valor;
             return saldo;
         } else{
-            return 0.0;
+            return 0;
         }
     }
 
@@ -29,15 +29,12 @@ public class Conta {
         }
         }
     
-    public double Transferir (double valor,int remetente){
-        if (valor>0.0&&valor<saldo){
-            saldo-=valor;
-            remetente+=valor;
-            return saldo;
-        } else{
-            return 0.0;
+    public double Transferir (double valor,Conta conta){
+        if (valor<=0.0&&valor>saldo)
+            throw new IllegalArgumentException("Valor inválido");
+            saldo-=valor;    
+            return conta.saldo+=valor;
         }
-    }
     }
 
     
