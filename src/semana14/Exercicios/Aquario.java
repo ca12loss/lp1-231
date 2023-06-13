@@ -7,9 +7,9 @@ public class Aquario {
         private double largura;
 
         public Aquario (double comprimento, double altura, double largura) {
-            this.setComprimento(comprimento);
-            this.setAltura(altura);
-            this.setLargura(largura);
+            setComprimento(comprimento);
+            setAltura(altura);
+            setLargura(largura);
         }
 
         public Aquario (double valor){

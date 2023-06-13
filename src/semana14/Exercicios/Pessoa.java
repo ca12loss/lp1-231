@@ -5,8 +5,8 @@ public class Pessoa {
     private double peso;
     
         public Pessoa(double altura, double peso){
-            this.setAltura(altura);
-            this.setPeso(peso);
+            setAltura(altura);
+            setPeso(peso);
         }
 
         public double calcularImc(){
