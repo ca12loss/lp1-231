@@ -1,4 +1,4 @@
-package semana14;
+package semana14.Exercicios;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -8,9 +8,9 @@ public class AquarioTest {
     @Test
     
     public void testargetesetComprimento(){
-        Aquario aquario = new Aquario();
+        Aquario aquario = new Aquario(5,5,5);
         aquario.setComprimento(10);
-        aquario.setAltura(10)
+        aquario.setAltura(10);
         aquario.setLargura(10);
         
         assertEquals(10, aquario.getComprimento());

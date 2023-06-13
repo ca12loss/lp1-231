@@ -21,8 +21,8 @@ public class Circulo {
         }
 
         public void setRaio(double raio) {
-            if (raio<=0.0){
-                throw new RuntimeExcepetion ("Valor inválido para raio");
+            if (raio <= 0.0){
+                throw new RuntimeException ("Valor inválido para raio");
             }
             this.raio = raio;
         }

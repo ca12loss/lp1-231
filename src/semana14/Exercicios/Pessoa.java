@@ -48,9 +48,9 @@ public class Pessoa {
             return altura;
         }
 
-        public double setAltura(double altura){
+        public void setAltura(double altura){
             if (altura <= 0.0){
-                throw new RuntimeExcepetion ("Valor inválido para altura");
+                throw new RuntimeException ("Valor inválido para altura");
             }
             this.altura = altura;
         }
@@ -61,7 +61,7 @@ public class Pessoa {
 
         public void setPeso(double peso){
             if (peso <= 0.0){
-                throw new RuntimeExcepetion ("Valor inválido para peso");
+                throw new RuntimeException ("Valor inválido para peso");
             }
             this.peso = peso;
             

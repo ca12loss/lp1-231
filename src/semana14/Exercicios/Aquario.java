@@ -31,13 +31,13 @@ public class Aquario {
             return volume*3;
         }
         
-        public double getComprimento{
+        public double getComprimento(){
             return comprimento;
         }
 
         public void setComprimento(double comprimento){
             if (comprimento <=0.0){
-                throw new RuntimeExcepetion("Valor inválido para comprimento");
+                throw new RuntimeException("Valor inválido para comprimento");
             }
             this.comprimento = comprimento;
         }
@@ -48,7 +48,7 @@ public class Aquario {
 
         public void setAltura(double altura){
             if (altura <=0.0){
-                throw new RuntimeExcepetion("Valor inválido para altura");
+                throw new RuntimeException("Valor inválido para altura");
             }
             this.altura = altura;
         }
@@ -59,9 +59,11 @@ public class Aquario {
 
         public void setLargura(double largura){
             if (largura <=0.0){
-                throw new RuntimeExcepetion("Valor inválido para largura");
+                throw new RuntimeException("Valor inválido para largura");
             }
             this.largura = largura;
         }
+
+        
         
 }

@@ -21,9 +21,9 @@ public class Retangulo {
         return base;
     }
 
-    public double setBase(double base){
+    public void setBase(double base){
         if (base<=0.0){
-            throw new RuntimeExcepetion("Valor inválido para a base");
+            throw new RuntimeException("Valor inválido para a base");
         }
          this.base=base;
     }
@@ -32,9 +32,9 @@ public class Retangulo {
         return altura;
     }
 
-    public double setAltura(double altura){
+    public void setAltura(double altura){
         if (altura<=0.0){
-            throw new RuntimeExcepetion("Valor inválido para a altura");
+            throw new RuntimeException("Valor inválido para a altura");
         }
         this.altura=altura;
     

@@ -21,7 +21,7 @@ public class Quadrado {
 
     public void setLado(double lado){
         if (lado <= 0.0){
-            throw new RuntimeExcepetion("Lado inválido");
+            throw new RuntimeException("Lado inválido");
         }
         this.lado = lado;
     }
