@@ -5,7 +5,7 @@ public class Circulo {
        private double raio;
 
         public Circulo (double raio){
-            this.setRaio(raio);
+           setRaio(raio);
         }
     
         public double calcularPerimetro(){

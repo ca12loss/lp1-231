@@ -5,8 +5,8 @@ public class Retangulo {
     private double altura;
 
     public Retangulo (double base, double altura){
-        this.setBase(base);
-        this.setAltura(altura);
+        setBase(base);
+        setAltura(altura);
     }
     
     public double calcularArea(){

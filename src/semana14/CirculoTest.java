@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class CirculoTest {
     @Test
-    public void testarSetRaio(){
+    public void testarSetRaioComPostivo(){
         Circulo circulo = new Circulo(3.0);
        
         circulo.setRaio(5.0);
