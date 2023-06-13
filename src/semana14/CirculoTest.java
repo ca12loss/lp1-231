@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 
 public class CirculoTest {
-    @Test
+@Test
     public void testarSetRaioComPostivo(){
         Circulo circulo = new Circulo(3.0);
        
@@ -14,7 +14,7 @@ public class CirculoTest {
         assertEquals(5.0, circulo.getRaio());
     }
    
-    @Test
+@Test
     public void testarSetRaioComNegativo() {
 
     Circulo circulo = new Circulo(3.0);
@@ -24,7 +24,7 @@ public class CirculoTest {
     });
     }
 
-    @Test
+@Test
     public void testarSetRaioComValorNulo() {
 
     Circulo circulo = new Circulo(3.0);
@@ -32,6 +32,24 @@ public class CirculoTest {
     assertThrows(RuntimeException.class, () -> {
         circulo.setRaio(0.0);
     });
+    }
+
+@Test
+    public void testarcalcularPerimetro(){
+        Circulo circulo = new Circulo(2.0);
+
+        double perimetro = circulo.calcularPerimetro();
+
+        assertEquals(12.566370614359172,perimetro);
+    }
+
+@Test 
+    public void testarcalcularArea(){
+        Circulo circulo = new Circulo(3.0);
+
+        double area = circulo.calcularArea();
+
+        assertEquals(28.274333882308138,area);
     }
 
 }
