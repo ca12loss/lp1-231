@@ -26,7 +26,7 @@ public class Conta {
         }
     
     public double Transferir (double valor,Conta conta){
-        if (valor<=0.0&&valor>saldo)
+        if (valor<=0.0||valor>saldo)
             throw new IllegalArgumentException("Valor inválido");
             saldo-=valor;    
             return conta.saldo+=valor;

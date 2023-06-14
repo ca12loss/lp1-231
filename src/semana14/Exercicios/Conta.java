@@ -28,11 +28,15 @@ public class Conta {
         }
     
     public double Transferir (double valor,Conta conta){
-        if (valor<=0.0&& valor>saldo){
+        if (valor<=0.0 || valor>saldo){
             throw new RuntimeException("Valor inválido");
         }
             saldo-=valor;    
             return conta.saldo+=valor;
+        }
+
+        public double getSaldo(){
+            return saldo;
         }
 
         public int getCodigo(){
