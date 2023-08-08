@@ -1,4 +1,4 @@
-package semana17;
+package semana17.Exercicios;
 
 public class Vendedor {
     protected String nome;

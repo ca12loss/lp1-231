@@ -1,4 +1,4 @@
-package semana17;
+package semana17.Exercicios;
 
 public class VendedorFixo extends Vendedor{
     private double salario;
@@ -12,5 +12,11 @@ public class VendedorFixo extends Vendedor{
         return (vendas*(comissao/100)+salario);
     }
 
-    
+    public double getSalario(){
+        return  salario;
+    }
+
+    public void setSalario(double salario){
+        this.salario = salario; 
+    }
 }
