@@ -10,15 +10,17 @@ public class ContaCorrente extends Conta {
         this.limite = limite;
     }
 
+    @Override
     public double calcularTarifa(){
-        return tarifa;
+        return getTarifa(); 
     }
 
+     @Override
     public void Sacar(double valor){
-        if (valor<=0.0||valor>saldo){
+        if (valor <= 0.0 || valor > (getSaldo() + limite)) {
             throw new RuntimeException("Valor inválido");
-         }
-             saldo-=valor;
+        }
+        setSaldo(getSaldo() - valor);
     }
 
     public double getLimite(){

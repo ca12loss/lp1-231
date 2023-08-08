@@ -10,6 +10,7 @@ public class ContaSalario extends Conta {
         this.empresa = empresa;
     }
 
+    @Override
     public double calcularTarifa(){
         return getTarifa();
     }
