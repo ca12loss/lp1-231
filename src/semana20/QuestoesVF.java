@@ -7,4 +7,13 @@ public class QuestoesVF extends Questoes {
         super(numero, enunciado);
         this.resposta = resposta;
     }
+
+    public boolean ehResposta() {
+        return resposta;
+    }
+
+    public void setResposta(boolean resposta) {
+        this.resposta = resposta;
+    }
 }
+

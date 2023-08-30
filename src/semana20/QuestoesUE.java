@@ -11,4 +11,20 @@ public class QuestoesUE extends Questoes {
         this.alternativas = alternativas;
         this.resposta = resposta;  
     }
+
+    public List<String> getAlternativas() {
+        return alternativas;
+    }
+
+    public void setAlternativas(List<String> alternativas) {
+        this.alternativas = alternativas;
+    }
+
+    public String getResposta() {
+        return resposta;
+    }
+
+    public void setResposta(String resposta) {
+        this.resposta = resposta;
+    }
 }
